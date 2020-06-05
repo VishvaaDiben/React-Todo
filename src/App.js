@@ -8,7 +8,7 @@ import Dashboard from "./components/dashboard";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Switch>
         <Route path="/sign-in" component={Login} />
         <Route exact path="/" component={Login} />
