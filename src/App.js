@@ -9,11 +9,10 @@ import Dashboard from "./components/dashboard";
 function App() {
   return (
     <Router basename="/">
-      {/* <Switch> */}
-        <Route exact path="/" component={Login} />
-        <Route path="/sign-in" component={Login} />
+      <Switch>
+        <Route exact path="/sign-in" component={Login} />
         <Route path="/dashboard" component={Dashboard} />
-      {/* </Switch> */}
+      </Switch>
     </Router>
   );
 }
