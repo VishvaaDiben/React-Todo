@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `video demo link`
+https://drive.google.com/file/d/1kFiXiddAu57YJBAQMtJYAe6CJyBGiBxl/view?usp=sharing
+
 ### `installation guide for beginners`
 
 Press the clone repository button and copy the url.
