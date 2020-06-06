@@ -135,24 +135,24 @@ function Dashboard() {
   }
 
   function getLastThreeItems() {
-    let a = [];
-    let y = [];
+    let arrayOfNewTodos = [];
+    let arrayOfObjectsTodos = [];
     for (var i = 0; i < todos.length; i += 3) {
-      let x = todos.slice(i, i + 3);
-      y.push(x);
+      let threeArrayOfObjectsTodos = todos.slice(i, i + 3);
+      arrayOfObjectsTodos.push(threeArrayOfObjectsTodos);
     }
-    let z = y[y.length - 1];
+    let finalTodoItem = arrayOfObjectsTodos[arrayOfObjectsTodos.length - 1];
 
-    if (z[2] !== undefined) {
-      a.push(z[2].text);
-      a.push(z[1].text);
-      a.push(z[0].text);
-    } else if (z[1] !== undefined) {
-      a.push(z[1].text);
-      a.push(z[0].text);
-    } else a.push(z[0].text);
+    if (finalTodoItem[2] !== undefined) {
+      arrayOfNewTodos.push(finalTodoItem[2].text);
+      arrayOfNewTodos.push(finalTodoItem[1].text);
+      arrayOfNewTodos.push(finalTodoItem[0].text);
+    } else if (finalTodoItem[1] !== undefined) {
+      arrayOfNewTodos.push(finalTodoItem[1].text);
+      arrayOfNewTodos.push(finalTodoItem[0].text);
+    } else arrayOfNewTodos.push(finalTodoItem[0].text);
 
-    return a.join("<br>");
+    return arrayOfNewTodos.join("<br>");
   }
 
   const state = {
