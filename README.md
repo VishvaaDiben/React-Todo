@@ -30,7 +30,7 @@ You will also see any lint errors in the console.
 Auth Login, because still new to swagger api. Not understand yet data post and fetch.
 Tried PrivateRoute but not complete yet.
 
-##  `all & more features to be added soon`
+###  `all & more features to be added soon`
 Will be using this as playground to restructure and rebuild Todo and possibly add more features. A good ground to exercise react elements.
 
 
